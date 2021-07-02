@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Albums</title>
+
+  </head>
+  <body>
+    <main class="container">
+      <article class="row">
+        <section class="col m-auto">
+          <h2>Lorem ipsum</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium molestias dolore earum qui optio libero, eveniet, accusamus, eum voluptatem pariatur asperiores maiores natus officia! Suscipit quam ex est sequi a.</p>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+        </section>
+        <section class="col">
+          <img src="./laptop-img.png"  class="img-fluid" alt="laptop image">
+        </section>
+      </article>
+
+      <main>
+
+        <section class="py-5 text-center container">
+          <div class="row pt-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Albums</h1>
+              <a href="https://jsonplaceholder.typicode.com/albums/1/photos">https://jsonplaceholder.typicode.com/albums/1/photos</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!-- <button class="btn btn-primary" id="show-all-photos">Show all photos</button> -->
+          <form action="">
+            <label for="albums">Show Album</label>
+            <input type="number" id="albums" />
+            <button type="button" class="btn btn-primary">Show Album</button>
+          </form>
+          <form action="">
+            <label for="photos-from">Show photos from</label>
+            <input type="number" id="photos-from" />
+            <label for="photos-to">to</label>
+            <input type="number" id="photos-to" />
+            <button type="button" class="btn btn-primary">Show Selected Photos</button>
+          </form>
+        </section>
+      
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="data-row">
+              <!--
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+      
+                  <div class="card-body">
+                    <h3 class="card-title">Album Id:</h3>
+                    <h5 class="card-title">Photo Id:</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <script src="main.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
