@@ -14,7 +14,7 @@
   <main>
     <?php include_once "./aside.php"; ?>
 
-    <?php include_once "./components/content.php"; ?>
+    <?php include_once "./components/prikaz.php"; ?>
   </main>
   <!-- /main -->
 
