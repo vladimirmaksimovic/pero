@@ -1,0 +1,57 @@
+/*** CSS RESET **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** GENERAL STYLES ***/
+body {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header,
+aside,
+footer {
+  background-color: #2980b9;
+  color: #f3f3f3;
+  border-radius: 3px;
+}
+
+header,
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+}
+
+aside,
+.content {
+  min-height: 88vh;
+}
+
+/*** ASIDE ***/
+aside form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/*** CONTENT SECTION ***/
+.content {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+}
