@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="../assets/style.css">
   <title>App</title>
 </head>
+
 <body>
   <?php include_once "./header.php"; ?>
 
@@ -20,4 +22,5 @@
 
   <?php include_once "./footer.php"; ?>
 </body>
+
 </html>

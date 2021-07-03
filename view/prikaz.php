@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require_once '../model/DAO.php';
 
@@ -20,7 +19,6 @@ $cena = isset($cena) ? $cena : "";
 <!-- prikaz sekcija -->
 <section class="content">
   <h2>Sekcija prikaza</h2>
-  <h4><?php echo $_SESSION['msg']; ?></h4>
   <table class="cars">
     <thead>
       <tr>
@@ -31,11 +29,11 @@ $cena = isset($cena) ? $cena : "";
     </thead>
     <tbody>
       <?php foreach ($automobili as $auto) { ?>
-      <tr>
-        <td><?php echo $auto['id']; ?></td>
-        <td><?php echo $auto['marka']; ?></td>
-        <td><?php echo $auto['cena']; ?></td>
-      </tr>
+        <tr>
+          <td><?php echo $auto['id']; ?></td>
+          <td><?php echo $auto['marka']; ?></td>
+          <td><?php echo $auto['cena']; ?></td>
+        </tr>
       <?php } ?>
     </tbody>
   </table>
