@@ -1,4 +1,5 @@
 <?php
+
 require_once '../model/DAO.php';
 
 $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : "";

@@ -1,17 +1,10 @@
 <?php
+require_once '../model/DAO.php';
 session_start();
 
-require_once '../model/DAO.php';
-
 $dao = new DAO();
-
 $automobili = $dao->selectAllCars();
 
-/* echo "<pre>";
-    print_r ($automobili);
-    echo "</pre>"; */
-
-$msg = isset($msg) ? $msg : "";
 $marka = isset($marka) ? $marka : "";
 $cena = isset($cena) ? $cena : "";
 
@@ -19,8 +12,7 @@ $cena = isset($cena) ? $cena : "";
 
 <!-- prikaz sekcija -->
 <section class="content">
-  <h2>Sekcija prikaza</h2>
-  <h4><?php echo $_SESSION['msg']; ?></h4>
+
   <table class="cars">
     <thead>
       <tr>
@@ -39,4 +31,5 @@ $cena = isset($cena) ? $cena : "";
       <?php } ?>
     </tbody>
   </table>
+
 </section>

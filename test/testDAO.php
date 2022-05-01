@@ -10,5 +10,3 @@ print_r($dao->selectAllCars());
 echo '</pre>';
 
 //$dao->insertCar("Moskvic", "dz aba");
-
-?>
