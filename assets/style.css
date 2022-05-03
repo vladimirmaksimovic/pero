@@ -13,6 +13,7 @@
   --secondary-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* value */
   --base-value: 1rem;
+  --radius-value: 3px;
 }
 
 /*** CSS RESET ***/
@@ -69,16 +70,45 @@ main {
 
 aside {
   width: 30vw;
+  padding: var(--base-value) 0;
   display: flex;
   justify-content: center;
 }
 
+aside fieldset {
+  height: fit-content;
+  border-radius: var(--radius-value);
+}
+
 aside form {
   width: 15vw;
+  padding: calc(var(--base-value)/2);
   display: flex;
   flex-direction: column;
-  gap: var(--base-value);
-  padding: var(--base-value);
+  gap: calc(var(--base-value)/2);
+}
+
+aside input {
+  padding: calc(var(--base-value)/2);
+}
+
+aside hr {
+  /* margin: calc(var(--base-value)/2) 0; */
+  color: var(--white);
+}
+
+aside input[type = "submit"] {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: var(--radius-value);
+  color: var(--white);
+}
+
+aside input[type = "submit"]:hover {
+  background-color: var(--light-blue);
+  border: 1px solid var(--white);
+  color: var(--white);
+  cursor: pointer;
 }
 
 /*** CONTENT SECTION ***/
@@ -87,7 +117,7 @@ aside form {
   width: 100%;
   padding: /* calc(var(--base-value)/2) */ var(--base-value);
   background-color: var(--dark-grey);
-  border-radius: 3px;
+  border-radius: var(--radius-value);
 }
 
 .content h2 {
@@ -96,7 +126,6 @@ aside form {
 
 .cars {
   border: 1px solid var(--white);
-  border-radius: 3px;
   border-collapse: collapse;
 }
 
