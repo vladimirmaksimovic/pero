@@ -1,4 +1,5 @@
 <!-- footer -->
 <footer>
-  <h2>Student: Petar Lukovic, broj indeksa: 1234</h2>
+  <h3>Student: Petar Lukovic</h3>
+  <h3>Broj indeksa: 1234</h3>
 </footer>

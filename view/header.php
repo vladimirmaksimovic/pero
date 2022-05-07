@@ -1,5 +1,4 @@
-
 <!-- header -->
 <header>
-  <h2>Internet programiranje ispit</h2>
+  <h1>Ispit iz predmeta: Internet programiranje</h1>
 </header>
